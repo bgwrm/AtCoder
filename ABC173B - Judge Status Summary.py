@@ -1,21 +1,10 @@
+import sys
+input = sys.stdin.readline
+
 n = int(input())
-s = [input() for i in range(n)]
-ac = 0
-wa = 0
-tle = 0
-re = 0
+s = [input().strip() for i in range(n)]
 
-for i in range(n):
-    if s[i] == 'AC':
-        ac += 1
-    elif s[i] =='WA':
-        wa += 1
-    elif s[i] == 'TLE':
-        tle += 1
-    else:
-        re += 1
-
-print('AC x ' + str(ac))
-print('WA x ' + str(wa))
-print('TLE x ' + str(tle))
-print('RE x ' + str(re))
+print('AC x ' + str(s.count('AC')))
+print('WA x ' + str(s.count('WA')))
+print('TLE x ' + str(s.count('TLE')))
+print('RE x ' + str(s.count('RE')))
