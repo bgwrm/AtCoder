@@ -27,5 +27,5 @@ com = list(itertools.combinations(l,2))
 # 出現数カウント
 from collections import Counter
 c = Counter(l)
-print(c('s')) # sの出現回数
+print(c['s']) # sの出現回数
 print(c.most_common()) # 出現回数多い順
