@@ -1,9 +1,14 @@
 s = input()
 n = int(input())
 a, b = (int(_) for _ in input().split())
-s = [int(_) for _ in input().split()]
+x = [int(_) for _ in input().split()]
+l = [input() for _ in range(n)]
 xy = [[int(_) for _ in input().split()] for i in range(n)]
 mod = 10 ** 9 + 7
+
+# ソート
+s.sort()
+s = sorted(s)
 
 # 最大公約数
 import math
@@ -17,5 +22,10 @@ def lcm(x, y):
 
 # 組み合わせリスト
 import itertools
-l = []
-c = list(itertools.combinations(l,2))
+com = list(itertools.combinations(l,2))
+
+# 出現数カウント
+from collections import Counter
+c = Counter(l)
+print(c('s')) # sの出現回数
+print(c.most_common()) # 出現回数多い順
