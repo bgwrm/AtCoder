@@ -6,6 +6,10 @@ l = [input() for _ in range(n)]
 xy = [[int(_) for _ in input().split()] for i in range(n)]
 mod = 10 ** 9 + 7
 
+# Yes/No出力
+print('Yes' if n%2 == 0 else 'No')
+print('No' if n%2 == 0 else 'Yes')
+
 # ソート
 s.sort()
 s = sorted(s)
@@ -29,3 +33,6 @@ from collections import Counter
 c = Counter(l)
 print(c['s']) # sの出現回数
 print(c.most_common()) # 出現回数多い順
+
+# アルファベットのリスト
+print([chr(ord("a")+i) for i in range(26)])
