@@ -34,5 +34,20 @@ c = Counter(l)
 print(c['s']) # sの出現回数
 print(c.most_common()) # 出現回数多い順
 
+# 素数判定
+def is_prime(num):
+    if num < 2:
+        return False
+    elif num == 2:
+        return True
+    elif num % 2 == 0:
+        return False
+    for i in range(3, num + 1, 2):
+        if i * i > num:
+            break
+        if num % i == 0:
+            return False
+    return True
+
 # アルファベットのリスト
 print([chr(ord("a")+i) for i in range(26)])
