@@ -51,3 +51,6 @@ def is_prime(num):
 
 # アルファベットのリスト
 print([chr(ord("a")+i) for i in range(26)])
+
+# 2で何回割り切れるか
+print(format(n, 'b')[::-1].find('1'))
