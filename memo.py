@@ -54,3 +54,7 @@ print([chr(ord("a")+i) for i in range(26)])
 
 # 2で何回割り切れるか
 print(format(n, 'b')[::-1].find('1'))
+
+# 10進数 -> 2進数、8進数、16進数
+bin(n)
+oct(n)
