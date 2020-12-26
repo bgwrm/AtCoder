@@ -56,5 +56,6 @@ print([chr(ord("a")+i) for i in range(26)])
 print(format(n, 'b')[::-1].find('1'))
 
 # 10進数 -> 2進数、8進数、16進数
-bin(n)
-oct(n)
+bin_str = format(n, 'b')
+oct_str = format(n, 'o')
+hex_str = format(n, 'x')
