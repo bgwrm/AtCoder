@@ -28,6 +28,9 @@ def lcm(x, y):
 import itertools
 com = list(itertools.combinations(l,2))
 
+# 重複可全列挙
+com = list(itertools.product(l, repeat=2))
+
 # 出現数カウント
 from collections import Counter
 c = Counter(l)
@@ -59,3 +62,6 @@ print(format(n, 'b')[::-1].find('1'))
 bin_str = format(n, 'b')
 oct_str = format(n, 'o')
 hex_str = format(n, 'x')
+
+# リスト読み込みと同時に添え字(_i)もつける
+l = [(int(_), i) for i, _ in enumerate(input().split(), 1)]
