@@ -35,6 +35,7 @@ com = list(itertools.product(l, repeat=2))
 from collections import Counter
 c = Counter(l)
 print(c['s']) # sの出現回数
+print(c.items()) # アイテム名と出現回数のタプル
 print(c.most_common()) # 出現回数多い順
 
 # 素数判定
