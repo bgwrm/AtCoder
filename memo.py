@@ -24,6 +24,17 @@ math.gcd(x, y)
 def lcm(x, y):
     return (x * y) // math.gcd(x, y)
 
+# 約数のリスト
+small = []
+big = []
+while i * i <= n:
+    if n % i == 0:
+        small.append(i)
+        if i != n // i:
+            big.append(n // i)
+    i += 1
+numlist = small + big[::-1]
+
 # 組み合わせリスト
 import itertools
 com = list(itertools.combinations(l,2))
@@ -66,3 +77,11 @@ hex_str = format(n, 'x')
 
 # リスト読み込みと同時に添え字(_i)もつける
 l = [(int(_), i) for i, _ in enumerate(input().split(), 1)]
+
+# 優先度付きキュー
+# 計算量O(logN)で最小値を取り出せる
+# 最大値で使いたい場合は予め-1を掛けておく
+import heapq
+heapq.heapify(l) # リストを優先度付きキューに変換
+heapq.heappop(l) # 最小値を取り出す
+heapq.heappush(l, n) # 要素を挿入
