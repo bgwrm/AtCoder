@@ -27,6 +27,7 @@ def lcm(x, y):
 # 約数のリスト
 small = []
 big = []
+i = 2
 while i * i <= n:
     if n % i == 0:
         small.append(i)
