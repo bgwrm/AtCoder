@@ -97,3 +97,8 @@ for i in range(2**n):
     for j in range(n):
         if (i>>j)&1:
             a += l[j]
+
+# 複数indexを検索
+list = [1,2,1,3,1]
+indexes = [i for i, x in enumerate(list) if x == 1]
+print(indexes) # [0, 2, 4]
