@@ -86,3 +86,11 @@ import heapq
 heapq.heapify(l) # リストを優先度付きキューに変換
 heapq.heappop(l) # 最小値を取り出す
 heapq.heappush(l, n) # 要素を挿入
+
+# bit全探索
+# (i>>j)&1 iをjbitずらした数が1ならばTrue
+for i in range(2**n):
+    a = 0
+    for j in range(n):
+        if (i>>j)&1:
+            a += l[j]
