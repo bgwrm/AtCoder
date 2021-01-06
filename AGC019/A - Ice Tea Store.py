@@ -1,0 +1,5 @@
+q, h, s, d = (int(_) for _ in input().split())
+n = int(input())
+per1 = min(4*q, 2*h, s)
+per2 = min(2*per1, d)
+print(n//2 * per2 + n%2 * per1)
