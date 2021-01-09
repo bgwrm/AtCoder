@@ -10,18 +10,13 @@ ans = 0
 
 # output
 print('Yes' if n%2 == 0 else 'No')
-print('No' if n%2 == 0 else 'Yes')
-print(ans)
 
 # ソート
-s.sort()
 s = sorted(s)
 
 # 最大公約数
 import math
-x = 0
-y = 0
-math.gcd(x, y)
+math.gcd(a, b)
 
 # 最小公倍数
 def lcm(x, y):
