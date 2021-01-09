@@ -1,4 +1,4 @@
-# input
+# input/output
 s = input()
 n = int(input())
 a, b = (int(_) for _ in input().split())
@@ -6,9 +6,6 @@ x = [int(_) for _ in input().split()]
 l = [input() for _ in range(n)]
 xy = [[int(_) for _ in input().split()] for i in range(n)]
 mod = 10**9 + 7
-ans = 0
-
-# output
 print('Yes' if n%2 == 0 else 'No')
 
 # ソート
