@@ -60,6 +60,10 @@ def is_prime(num):
             return False
     return True
 
+# 整数判定
+f = 2.0
+print(f.is_integer()) # True
+
 # アルファベットのリスト
 print([chr(ord("a")+i) for i in range(26)])
 
