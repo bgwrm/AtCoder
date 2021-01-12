@@ -35,8 +35,7 @@ numlist = small + big[::-1]
 # 組み合わせリスト
 import itertools
 com = list(itertools.combinations(l,2))
-
-# 重複可全列挙
+# 重複可
 com = list(itertools.product(l, repeat=2))
 
 # 出現数カウント
