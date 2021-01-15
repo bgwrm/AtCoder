@@ -8,6 +8,7 @@ xy = [[int(_) for _ in input().split()] for i in range(n)]
 x, y = [list(i) for i in zip(*xy)]
 mod = 10**9 + 7
 print('Yes' if n%2 == 0 else 'No')
+print(*l, sep='\n')
 
 # ソート
 s = sorted(s)
