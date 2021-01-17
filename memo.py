@@ -97,6 +97,15 @@ for i in range(2**n):
         if (i>>j)&1:
             a += l[j]
 
+# 二分探索
+import bisect
+# 値aが挿入できる位置(同値があったときの左右)
+left = bisect.bisect_left(l, a)
+right = bisect.bisect_right(l, a)
+# 挿入までする
+bisect.insort_left(l, a)
+bisect.insort_right(l,a)
+
 # 複数indexを検索
 list = [1,2,1,3,1]
 indexes = [i for i, x in enumerate(list) if x == 1]
