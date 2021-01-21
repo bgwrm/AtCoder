@@ -38,6 +38,6 @@ heapq.heappop(l) # 最小値を取り出す
 heapq.heappush(l, n) # 要素を挿入
 
 # 複数indexを検索
-list = [1,2,1,3,1]
+li = [1,2,1,3,1]
 indexes = [i for i, x in enumerate(list) if x == 1]
 print(indexes) # [0, 2, 4]
