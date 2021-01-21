@@ -50,7 +50,7 @@ class UnionFind(object):
 
 n, m = 5, 3 #map(int, input().split()) n:ノードの数, m:パスの数
 uf = UnionFind(n)
-for i,j in [[1, 2],[5, 4],[4, 1]]:  # range(m):
+for i, j in [[1, 2],[5, 4],[4, 1]]:  # range(m):
     a, b = i, j #map(int, input().split()) #a,b:つながっている辺
     uf.union(a-1,b-1)
 for i in range(n):
