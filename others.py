@@ -36,7 +36,7 @@ class UnionFind(object):
         else:
             self.par[x] = self.find(self.par[x])
             return self.par[x]
-    def union(self, x, y):
+    def unite(self, x, y):
         x = self.find(x)
         y = self.find(y)
         if x != y:
@@ -45,7 +45,7 @@ class UnionFind(object):
             if self.rank[x] == self.rank[y]:
                 self.rank[x] += 1
             self.par[y] = x
-    def is_same(self, x, y):
+    def is_same_group(self, x, y):
         return self.find(x) == self.find(y)
 
 n, m = 5, 3 #map(int, input().split()) n:ノードの数, m:パスの数
