@@ -43,7 +43,7 @@ print(n, route)
 
 # ワーシャルフロイト法
 import random
-from scipy.sparse.csgraph import floyd_warshall
+#from scipy.sparse.csgraph import floyd_warshall
 c= [[random.randint(1, 10) for i in range(n)] for i in range(n)]
 for i in range(n):
     for j in range(n):
