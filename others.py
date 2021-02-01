@@ -27,7 +27,7 @@ print(dp[n][w])
 
 # Union-Find
 class UnionFind(object):
-    def __init__(self, n=1):
+    def __init__(self, n = 1):
         self.par = [_ for _ in range(n)]
         self.rank = [0]*n
     def find(self, x):
@@ -52,7 +52,7 @@ n, m = 5, 3 #map(int, input().split()) n:ノードの数, m:パスの数
 uf = UnionFind(n)
 for i, j in [[1, 2],[5, 4],[4, 1]]:  # range(m):
     a, b = i, j #map(int, input().split()) #a,b:つながっている辺
-    uf.union(a-1,b-1)
+    uf.unite(a-1,b-1)
 for i in range(n):
     uf.find(i)  # 一周findすることによって接続漏れをなくす。
 print(uf.par) #[4, 4, 2, 4, 4]
