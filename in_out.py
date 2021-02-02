@@ -15,6 +15,7 @@ import itertools
 com = list(itertools.combinations(l,2)) # nCr
 per = list(itertools.permutations(l,3)) # nPr 順列
 com = list(itertools.product(l, repeat=2)) # 重複可
+com = list(itertools.combinations_with_replacement(l, 2)) #重複可順列
 
 # 出現数カウント
 from collections import Counter
