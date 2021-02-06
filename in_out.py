@@ -10,6 +10,10 @@ mod = 10**9 + 7
 print('Yes' if n%2 == 0 else 'No')
 print(*l, sep='\n')
 
+# 小数点数扱うときはfloatじゃなくて
+from decimal import Decimal
+x, y, r = (Decimal(_) for _ in input().split())
+
 # 組み合わせリスト
 import itertools
 com = list(itertools.combinations(l,2)) # nCr
