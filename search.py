@@ -43,7 +43,7 @@ print(n, route)
 
 # ワーシャルフロイト法
 import random
-#from scipy.sparse.csgraph import floyd_warshall
+from scipy.sparse import*
 c= [[random.randint(1, 10) for i in range(n)] for i in range(n)]
 for i in range(n):
     for j in range(n):
@@ -51,7 +51,7 @@ for i in range(n):
             c[i][j] = min(c[i][j],c[i][k]+c[k][j])
 for i in c:
     print(i)
-cost=floyd_warshall(c)
+cost = csgraph.floyd_warshall(c)
 
 # ベルマンフォード法
 def BF(p, n, s):
