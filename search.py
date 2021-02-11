@@ -43,7 +43,7 @@ print(n, route)
 
 # ワーシャルフロイト法
 import random
-from scipy.sparse import*
+import scipy.sparse
 c= [[random.randint(1, 10) for i in range(n)] for i in range(n)]
 for i in range(n):
     for j in range(n):
