@@ -57,7 +57,7 @@ heapq.heappush(l, n) # 要素を挿入
 
 # 複数indexを検索
 li = [1,2,1,3,1]
-indexes = [i for i, x in enumerate(list) if x == 1]
+indexes = [i for i, x in enumerate(li) if x == 1]
 print(indexes) # [0, 2, 4]
 
 # 正規表現
