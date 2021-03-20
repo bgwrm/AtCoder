@@ -30,6 +30,7 @@ print(c.most_common()) # 出現回数多い順
 
 # アルファベットのリスト
 print([chr(ord("a")+i) for i in range(26)])
+l[ord(character)-ord('a')] += 1
 
 # リスト読み込みと同時に添え字(_i)もつける
 l = [(int(_), i) for i, _ in enumerate(input().split(), 1)]
