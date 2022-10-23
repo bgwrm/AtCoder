@@ -1,3 +1,5 @@
+import sys
+sys.setrecursionlimit(10**6)
 # input/output
 s = input()
 n = int(input())
@@ -6,7 +8,7 @@ x = [int(_) for _ in input().split()]
 l = [input() for _ in range(n)]
 xy = [[int(_) for _ in input().split()] for i in range(n)]
 x, y = [list(i) for i in zip(*xy)]
-mod = 10**9 + 7
+mod = 10**9+7
 print('Yes' if n%2 == 0 else 'No')
 print(*l, sep='\n')
 
@@ -30,6 +32,7 @@ print(c.most_common()) # 出現回数多い順
 
 # アルファベットのリスト
 print([chr(ord("a")+i) for i in range(26)])
+character = "a"
 l[ord(character)-ord('a')] += 1
 
 # リスト読み込みと同時に添え字(_i)もつける
